@@ -1,0 +1,8 @@
+initscript {
+    dependencies {
+        classpath files("${gradle.getGradleHomeDir()}/lib/plugins/my-plugin.jar")
+    }
+}
+
+import my.plugin.PluginMain
+apply plugin: PluginMain
